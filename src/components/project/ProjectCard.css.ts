@@ -1,6 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "@/styles/theme.css";
 
+export const cardWrapper = style({
+  height: "100%",
+});
+
 export const card = style({
   display: "flex",
   flexDirection: "column",

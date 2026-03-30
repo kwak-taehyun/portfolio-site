@@ -25,7 +25,7 @@ export const meta = style({
 
 export const title = style({
   fontFamily: vars.font.sans,
-  fontSize: "0.8125rem",
+  fontSize: "0.875rem",
   fontWeight: 600,
   letterSpacing: "0.08em",
   textTransform: "uppercase",
@@ -34,7 +34,7 @@ export const title = style({
 });
 
 export const copy = style({
-  fontSize: "0.875rem",
+  fontSize: "0.750rem",
   color: vars.color.textSubtle,
   lineHeight: 1.6,
 });

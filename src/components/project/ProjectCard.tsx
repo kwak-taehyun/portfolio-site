@@ -16,7 +16,7 @@ export function ProjectCard({ project }: Props) {
   const thumbTone = toneClass[project.thumbnailTone] ?? styles.thumbBlue;
 
   return (
-    <article>
+    <article className={styles.cardWrapper}>
       <Link href={`/projects/${project.slug}`} className={styles.card}>
         <div className={`${styles.thumb} ${thumbTone}`}>
           <span className={styles.thumbGrid} aria-hidden />

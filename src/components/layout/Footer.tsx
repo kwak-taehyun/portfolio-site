@@ -12,8 +12,7 @@ export function Footer() {
         <div className={styles.meta}>
           <p className={styles.title}>{site.meta.title}</p>
           <p className={styles.copy}>
-            © {year} {site.meta.author}. 시맨틱 마크업과 접근성을 바탕으로 한 UI
-            개발.
+            © {year} {site.meta.author}. Sementic Mark up &amp; Web Accessibility based UI Development.
           </p>
         </div>
         <nav className={styles.links} aria-label="푸터 링크">

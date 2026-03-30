@@ -44,7 +44,7 @@ export const kicker = style({
 });
 
 export const headline = style({
-  fontSize: "clamp(2rem, 5vw, 3.25rem)",
+  fontSize: "clamp(2rem, 5vw, 2.5rem)",
   fontWeight: 700,
   letterSpacing: "-0.03em",
   lineHeight: 1.15,
