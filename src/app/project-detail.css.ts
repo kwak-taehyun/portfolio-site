@@ -1,6 +1,22 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "@/styles/theme.css";
 
+export const breadcrumbNav = style({
+  marginBottom: "1.5rem",
+});
+
+export const breadcrumbLink = style({
+  fontFamily: vars.font.sans,
+  fontSize: "0.8125rem",
+  color: vars.color.textMuted,
+  transition: "color 0.2s ease",
+  selectors: {
+    "&:hover": {
+      color: vars.color.accent,
+    },
+  },
+});
+
 export const heroThumb = style({
   aspectRatio: "21 / 9",
   borderRadius: 16,
@@ -14,7 +30,7 @@ export const metaBar = style({
   display: "flex",
   flexWrap: "wrap",
   gap: "0.75rem 1.25rem",
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   color: vars.color.textSubtle,
   marginBottom: "1rem",
@@ -36,7 +52,7 @@ export const storySection = style({
 });
 
 export const storyLabel = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.6875rem",
   fontWeight: 600,
   letterSpacing: "0.14em",
@@ -105,7 +121,7 @@ export const metricCard = style({
 });
 
 export const metricValue = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "1.5rem",
   fontWeight: 600,
   color: vars.color.accent,

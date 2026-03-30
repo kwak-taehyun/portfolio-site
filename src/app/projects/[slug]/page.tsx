@@ -50,16 +50,8 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   return (
     <article className={layout.container}>
-      <nav aria-label="breadcrumb" style={{ marginBottom: "1.5rem" }}>
-        <Link
-          href="/projects"
-          style={{
-            fontFamily: "var(--font-jetbrains-mono), monospace",
-            fontSize: "0.8125rem",
-            color: "inherit",
-            opacity: 0.7,
-          }}
-        >
+      <nav className={detail.breadcrumbNav} aria-label="breadcrumb">
+        <Link href="/projects" className={detail.breadcrumbLink}>
           ← 프로젝트 목록
         </Link>
       </nav>

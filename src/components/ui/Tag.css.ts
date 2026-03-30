@@ -4,7 +4,7 @@ import { vars } from "@/styles/theme.css";
 export const tag = style({
   display: "inline-flex",
   alignItems: "center",
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.6875rem",
   fontWeight: 500,
   letterSpacing: "0.04em",

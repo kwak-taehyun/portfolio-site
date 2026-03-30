@@ -20,7 +20,7 @@ globalStyle("body", {
   minHeight: "100%",
   backgroundColor: vars.color.bg,
   color: vars.color.text,
-  fontFamily: `'Pretendard', var(--font-sans), 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, sans-serif`,
+  fontFamily: vars.font.sans,
   WebkitFontSmoothing: "antialiased",
   MozOsxFontSmoothing: "grayscale",
   lineHeight: 1.65,

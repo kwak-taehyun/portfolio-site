@@ -19,7 +19,7 @@ export const vars = createThemeContract({
     nav: null,
   },
   font: {
-    mono: null,
+    sans: null,
   },
 });
 
@@ -42,7 +42,7 @@ export const darkTheme = createTheme(vars, {
     nav: "0 8px 32px rgba(0, 0, 0, 0.35)",
   },
   font: {
-    mono: "var(--font-jetbrains-mono), ui-monospace, monospace",
+    sans: "'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
   },
 });
 
@@ -65,6 +65,6 @@ export const lightTheme = createTheme(vars, {
     nav: "0 8px 32px rgba(15, 17, 21, 0.08)",
   },
   font: {
-    mono: "var(--font-jetbrains-mono), ui-monospace, monospace",
+    sans: "'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
   },
 });

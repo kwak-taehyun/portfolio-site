@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
@@ -9,18 +8,6 @@ import * as layoutStyles from "@/styles/layout.css";
 import "@/styles/global.css";
 
 import "./globals.css";
-
-const noto = Noto_Sans_KR({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["400", "500", "600", "700"],
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-  weight: ["400", "500", "600"],
-});
 
 const site = getSite();
 
@@ -55,11 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ko"
-      className={`${darkTheme} ${noto.variable} ${jetbrains.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="ko" className={darkTheme} suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"

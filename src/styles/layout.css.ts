@@ -47,7 +47,7 @@ export const section = style({
 });
 
 export const sectionLabel = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.75rem",
   fontWeight: 500,
   letterSpacing: "0.14em",

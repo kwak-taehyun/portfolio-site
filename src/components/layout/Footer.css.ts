@@ -24,7 +24,7 @@ export const meta = style({
 });
 
 export const title = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   fontWeight: 600,
   letterSpacing: "0.08em",

@@ -45,7 +45,7 @@ export const row = style({
 });
 
 export const k = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.6875rem",
   fontWeight: 600,
   letterSpacing: "0.1em",

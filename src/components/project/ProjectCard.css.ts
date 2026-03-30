@@ -65,7 +65,7 @@ export const meta = style({
   flexWrap: "wrap",
   alignItems: "center",
   gap: "0.5rem 0.75rem",
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.75rem",
   color: vars.color.textSubtle,
 });
@@ -92,7 +92,7 @@ export const stacks = style({
 });
 
 export const readMore = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   fontWeight: 500,
   color: vars.color.accent,

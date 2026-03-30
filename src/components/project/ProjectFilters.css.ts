@@ -16,7 +16,7 @@ export const group = style({
 });
 
 export const label = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.6875rem",
   fontWeight: 600,
   letterSpacing: "0.12em",
@@ -54,7 +54,7 @@ export const empty = style({
 export const reset = style({
   marginLeft: "auto",
   alignSelf: "center",
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   fontWeight: 500,
   color: vars.color.accent,

@@ -49,7 +49,7 @@ export const item = style({
 });
 
 export const itemName = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.875rem",
   fontWeight: 600,
   color: vars.color.text,

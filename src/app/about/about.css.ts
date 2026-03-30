@@ -13,7 +13,7 @@ export const block = style({
 });
 
 export const years = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "clamp(2.5rem, 6vw, 3.5rem)",
   fontWeight: 600,
   letterSpacing: "-0.03em",

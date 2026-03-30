@@ -39,7 +39,7 @@ export const inner = style({
 });
 
 export const brand = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   fontWeight: 600,
   letterSpacing: "0.06em",

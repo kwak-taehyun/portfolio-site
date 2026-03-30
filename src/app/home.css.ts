@@ -34,7 +34,7 @@ export const heroAside = style({
 });
 
 export const kicker = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.75rem",
   fontWeight: 600,
   letterSpacing: "0.16em",
@@ -81,7 +81,7 @@ export const stackCard = style({
 });
 
 export const stackTitle = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.6875rem",
   fontWeight: 600,
   letterSpacing: "0.12em",
@@ -97,7 +97,7 @@ export const stackList = style({
 });
 
 export const stackItem = style({
-  fontFamily: vars.font.mono,
+  fontFamily: vars.font.sans,
   fontSize: "0.8125rem",
   color: vars.color.textMuted,
 });
