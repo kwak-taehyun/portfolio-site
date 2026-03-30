@@ -27,7 +27,7 @@ export const label = style({
 export const select = style({
   fontSize: "0.875rem",
   paddingBlock: 10,
-  paddingInline: 12,
+  paddingInline: "12px 30px",
   borderRadius: 8,
   border: `1px solid ${vars.color.border}`,
   backgroundColor: vars.color.bgElevated,

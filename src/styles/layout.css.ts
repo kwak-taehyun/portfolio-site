@@ -14,6 +14,7 @@ export const main = style({
   flex: 1,
   width: "100%",
   paddingTop: 88,
+  paddingBottom: 60,
   "@media": {
     "(max-width: 768px)": {
       paddingTop: 76,
@@ -68,7 +69,7 @@ export const sectionTitle = style({
 export const sectionDesc = style({
   fontSize: "1.0625rem",
   color: vars.color.textMuted,
-  maxWidth: "42rem",
+  maxWidth: "100%",
   lineHeight: 1.7,
 });
 
