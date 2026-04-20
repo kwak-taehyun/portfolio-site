@@ -45,7 +45,7 @@ export type ContactData = {
   title: string;
   intro: string;
   email: string;
-  github: string;
+  portfolio: string;
   form: {
     nameLabel: string;
     emailLabel: string;

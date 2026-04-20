@@ -3,7 +3,13 @@
     "title": "곽태현의 포트폴리오",
     "description": "퍼블리싱·접근성·성능에 강점을 둔 프론트엔드 개발자 곽태현의 포트폴리오입니다.",
     "author": "곽태현",
-    "keywords": ["퍼블리싱", "웹 접근성", "성능 최적화", "프론트엔드", "시맨틱 HTML"]
+    "keywords": [
+      "퍼블리싱",
+      "웹 접근성",
+      "성능 최적화",
+      "프론트엔드",
+      "시맨틱 HTML"
+    ]
   },
   "nav": [
     { "href": "/", "label": "홈" },
@@ -16,7 +22,15 @@
     "headline": "구조를 세우고, 모두가 쓸 수 있는 웹을 만듭니다.",
     "keywords": ["Semantic HTML", "a11y", "Performance", "Cross-browser"],
     "intro": "10년 이상 퍼블리싱과 프론트엔드 경험을 바탕으로 디자인을 정확히 구현하고, 접근성과 성능까지 책임지는 마크업·UI 개발을 지향합니다.",
-    "techStackSummary": ["HTML5 / CSS3", "JavaScript (ES6+)", "React", "Next.js", "Vue", "웹 접근성(WCAG)", "Core Web Vitals"],
+    "techStackSummary": [
+      "HTML5 / CSS3",
+      "JavaScript (ES6+)",
+      "React",
+      "Next.js",
+      "Vue",
+      "웹 접근성(WCAG)",
+      "Core Web Vitals"
+    ],
     "cta": {
       "primary": { "href": "/projects", "label": "프로젝트 보기" },
       "secondary": { "href": "/contact", "label": "연락하기" }
@@ -28,9 +42,18 @@
       "campaign-microsite"
     ],
     "strengths": [
-      { "title": "시맨틱 마크업", "body": "의미 있는 구조로 유지보수와 SEO, 보조기기 호환을 동시에 잡습니다." },
-      { "title": "웹 접근성", "body": "키보드·스크린리더·명도 대비를 기본값으로 두고 팀 가이드에 반영합니다." },
-      { "title": "퍼포먼스", "body": "번들·이미지·렌더 경로를 점검해 실사용 지표 개선에 집중합니다." }
+      {
+        "title": "시맨틱 마크업",
+        "body": "의미 있는 구조로 유지보수와 SEO, 보조기기 호환을 동시에 잡습니다."
+      },
+      {
+        "title": "웹 접근성",
+        "body": "키보드·스크린리더·명도 대비를 기본값으로 두고 팀 가이드에 반영합니다."
+      },
+      {
+        "title": "퍼포먼스",
+        "body": "번들·이미지·렌더 경로를 점검해 실사용 지표 개선에 집중합니다."
+      }
     ]
   },
   "about": {
@@ -40,9 +63,18 @@
       "summary": "에이전시·SI·스타트업 등 다양한 환경에서 마크업, UI 개발, 디자인 시스템 구축에 참여해 왔습니다. 기획·디자인·백엔드와의 협업 경험이 풍부하며, 납기와 품질의 균형을 맞추는 데 익숙합니다."
     },
     "expertise": [
-      { "title": "퍼블리싱", "desc": "픽셀 퍼펙트에 가까운 구현, 반응형·크로스 브라우징 대응" },
-      { "title": "접근성", "desc": "WCAG 기준 점검, ARIA·포커스 관리, 팀 내 교육" },
-      { "title": "성능", "desc": "LCP/CLS/TBT 개선, lazy loading, critical CSS" },
+      {
+        "title": "퍼블리싱",
+        "desc": "픽셀 퍼펙트에 가까운 구현, 반응형·크로스 브라우징 대응"
+      },
+      {
+        "title": "접근성",
+        "desc": "WCAG 기준 점검, ARIA·포커스 관리, 팀 내 교육"
+      },
+      {
+        "title": "성능",
+        "desc": "LCP/CLS/TBT 개선, lazy loading, critical CSS"
+      },
       { "title": "협업", "desc": "Figma·Git·이슈 트래킹 기반 커뮤니케이션" }
     ],
     "philosophy": {
@@ -66,9 +98,18 @@
         "id": "core",
         "title": "HTML / CSS / JavaScript",
         "items": [
-          { "name": "시맨틱 HTML5", "detail": "랜드마크, 폼, 리스트 구조 설계" },
-          { "name": "CSS3 & 레이아웃", "detail": "Grid, Flexbox, 컨테이너 쿼리 활용" },
-          { "name": "JavaScript (ES6+)", "detail": "DOM, 모듈, 비동기, 타입스크립트 협업" }
+          {
+            "name": "시맨틱 HTML5",
+            "detail": "랜드마크, 폼, 리스트 구조 설계"
+          },
+          {
+            "name": "CSS3 & 레이아웃",
+            "detail": "Grid, Flexbox, 컨테이너 쿼리 활용"
+          },
+          {
+            "name": "JavaScript (ES6+)",
+            "detail": "DOM, 모듈, 비동기, 타입스크립트 협업"
+          }
         ]
       },
       {
@@ -84,8 +125,14 @@
         "id": "performance",
         "title": "퍼포먼스 최적화",
         "items": [
-          { "name": "Core Web Vitals", "detail": "LCP, INP, CLS 모니터링·개선" },
-          { "name": "에셋 전략", "detail": "이미지 포맷, 폰트 로딩, 코드 스플리팅" }
+          {
+            "name": "Core Web Vitals",
+            "detail": "LCP, INP, CLS 모니터링·개선"
+          },
+          {
+            "name": "에셋 전략",
+            "detail": "이미지 포맷, 폰트 로딩, 코드 스플리팅"
+          }
         ]
       },
       {
@@ -111,7 +158,7 @@
     "title": "연락처",
     "intro": "프로젝트 문의나 협업 제안은 아래로 부탁드립니다.",
     "email": "falastic@gmail.com",
-    "github": "https://github.com/kwak-taehyun",
+    "portfolio": "https://github.com/kwak-taehyun/portfolio-site",
     "form": {
       "nameLabel": "이름",
       "emailLabel": "이메일",
