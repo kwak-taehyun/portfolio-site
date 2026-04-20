@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "slug": "design-system-a11y",
-      "title": "엔터프라이즈 디자인 시스템 구축",
-      "year": 2024,
-      "types": ["디자인 시스템", "접근성"],
+      "slug": "kbpay-3.0-si",
+      "title": "KB국민카드 KB Pay 3.0 구축",
+      "year": 2025,
+      "types": ["퍼블리싱", "접근성"],
       "summary": "컴포넌트 라이브러리와 문서화를 통해 팀 전반의 UI 일관성과 접근성 기준을 통일한 프로젝트입니다.",
       "stack": ["React", "Storybook", "TypeScript", "CSS Modules"],
       "thumbnailTone": "blue",
@@ -39,10 +39,10 @@
       }
     },
     {
-      "slug": "commerce-performance",
+      "slug": "skrental-b2c-sm",
       "title": "SK렌터카 B2C 통합운영",
       "year": 2025,
-      "types": ["퍼블리싱", "성능"],
+      "types": ["퍼블리싱", "크로스 브라우징"],
       "summary": "레거시 템플릿을 모던 스택으로 이전하며 LCP와 번들 크기를 동시에 개선했습니다.",
       "stack": ["Next.js", "React", "Vanilla Extract", "Image CDN"],
       "thumbnailTone": "violet",
@@ -73,13 +73,13 @@
       }
     },
     {
-      "slug": "commerce-performance",
+      "slug": "skrental-ui-ux-renewal",
       "title": "SK렌터카 UI,UX 리뉴얼",
       "year": 2023,
-      "types": ["퍼블리싱", "성능"],
+      "types": ["퍼블리싱", "UI/UX", "기능개선"],
       "summary": "레거시 템플릿을 모던 스택으로 이전하며 LCP와 번들 크기를 동시에 개선했습니다.",
       "stack": ["Next.js", "React", "Vanilla Extract", "Image CDN"],
-      "thumbnailTone": "violet",
+      "thumbnailTone": "teal",
       "detail": {
         "overview": "모바일 유입이 대부분인 서비스에서 체감 속도와 이탈률 개선이 핵심 과제였습니다.",
         "role": "마크업·스타일 구조 설계 · 이미지·폰트 로딩 전략 수립",
@@ -104,36 +104,6 @@
           }
         ],
         "galleryCaptions": ["최적화 전후 비교", "이미지 파이프라인", "RUM 지표"]
-      }
-    },
-    {
-      "slug": "campaign-microsite",
-      "title": "캠페인 마이크로사이트",
-      "year": 2022,
-      "types": ["퍼블리싱", "크로스 브라우징"],
-      "summary": "짧은 기간 내 다국어·다해상도 대응이 필요한 프로모션 사이트를 안정적으로 런칭했습니다.",
-      "stack": ["HTML", "SCSS", "Webpack", "GSAP"],
-      "thumbnailTone": "teal",
-      "detail": {
-        "overview": "브랜드 가이드에 맞는 인터랙션과 짧은 로딩 시간이 요구되었습니다.",
-        "role": "퍼블리싱 전담 · IE 호환 범위 합의 · 모션 구현",
-        "problem": "레거시 브라우저 지원 범위와 모션 성능 사이에서 타협이 필요했습니다.",
-        "approach": "프로그레시브 인핸스먼트로 기본 콘텐츠는 항상 노출되게 하고, 모션은 `prefers-reduced-motion`을 존중했습니다.",
-        "solution": "폴리필 최소화와 기능 감지로 분기하여, 지원 브라우저별로 동일한 정보 구조를 유지했습니다.",
-        "results": [
-          "런칭 후 크리티컬 이슈 0건",
-          "QA 사이클 단축",
-          "재사용 가능한 캠페인 템플릿 확보"
-        ],
-        "metrics": [
-          {
-            "label": "크로스 브라우저 이슈",
-            "value": "-55%",
-            "context": "대비 이전 캠페인"
-          },
-          { "label": "일정", "value": "기한 준수", "context": "약속 마일스톤" }
-        ],
-        "galleryCaptions": ["메인 비주얼", "반응형 그리드", "모션 폴백"]
       }
     },
     {
@@ -153,6 +123,36 @@
         "results": [
           "재사용 가능한 프로모션 템플릿 작업",
           "다국어 QR 가입 프로세스 고도화"
+        ],
+        "metrics": [
+          {
+            "label": "크로스 브라우저 이슈",
+            "value": "-55%",
+            "context": "대비 이전 캠페인"
+          },
+          { "label": "일정", "value": "기한 준수", "context": "약속 마일스톤" }
+        ],
+        "galleryCaptions": ["메인 비주얼", "반응형 그리드", "모션 폴백"]
+      }
+    },
+    {
+      "slug": "nh-tablet-branch-enhancement",
+      "title": "NH농협 태블릿브랜치 고도화",
+      "year": 2020,
+      "types": ["퍼블리싱", "크로스 브라우징"],
+      "summary": "짧은 기간 내 다국어·다해상도 대응이 필요한 프로모션 사이트를 안정적으로 런칭했습니다.",
+      "stack": ["HTML", "SCSS", "Webpack", "GSAP"],
+      "thumbnailTone": "blue",
+      "detail": {
+        "overview": "브랜드 가이드에 맞는 인터랙션과 짧은 로딩 시간이 요구되었습니다.",
+        "role": "퍼블리싱 전담 · IE 호환 범위 합의 · 모션 구현",
+        "problem": "레거시 브라우저 지원 범위와 모션 성능 사이에서 타협이 필요했습니다.",
+        "approach": "프로그레시브 인핸스먼트로 기본 콘텐츠는 항상 노출되게 하고, 모션은 `prefers-reduced-motion`을 존중했습니다.",
+        "solution": "폴리필 최소화와 기능 감지로 분기하여, 지원 브라우저별로 동일한 정보 구조를 유지했습니다.",
+        "results": [
+          "런칭 후 크리티컬 이슈 0건",
+          "QA 사이클 단축",
+          "재사용 가능한 캠페인 템플릿 확보"
         ],
         "metrics": [
           {
