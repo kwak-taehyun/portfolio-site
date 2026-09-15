@@ -23,7 +23,10 @@ export function ProjectCard({ project }: Props) {
         </div>
         <div className={styles.body}>
           <div className={styles.meta}>
-            <span>{project.year}</span>
+            {project.year.map((y) => (
+              <span key={y}>{y}</span>
+            ))}
+
             {project.types.map((t) => (
               <span key={t}>· {t}</span>
             ))}

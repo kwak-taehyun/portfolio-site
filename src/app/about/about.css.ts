@@ -22,10 +22,11 @@ export const years = style({
 });
 
 export const lead = style({
-  fontSize: "1.0625rem",
+  fontSize: "1rem",
   color: vars.color.textMuted,
   lineHeight: 1.75,
   maxWidth: "44rem",
+  wordBreak: "keep-all",
 });
 
 export const subheading = style({
@@ -76,7 +77,7 @@ export const expertiseDesc = style({
 export const philosophyList = style({
   display: "flex",
   flexDirection: "column",
-  gap: "1rem",
+  gap: ".25rem",
   maxWidth: "44rem",
 });
 

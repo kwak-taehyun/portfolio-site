@@ -17,11 +17,19 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return projectsFile.projects.find((p) => p.slug === slug);
 }
 
+const FEATURED_FALLBACK_COUNT = 3;
+
 export function getFeaturedProjects(): Project[] {
   const map = new Map(projectsFile.projects.map((p) => [p.slug, p]));
-  return site.home.featuredProjectSlugs
+  const featured = site.home.featuredProjectSlugs
     .map((slug) => map.get(slug))
     .filter((p): p is Project => p !== undefined);
+
+  if (featured.length > 0) {
+    return featured;
+  }
+
+  return projectsFile.projects.slice(0, FEATURED_FALLBACK_COUNT);
 }
 
 export function getAllProjectSlugs(): string[] {

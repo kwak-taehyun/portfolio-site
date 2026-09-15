@@ -62,7 +62,9 @@ export default async function ProjectDetailPage({ params }: Props) {
             <span className={cardStyles.thumbGrid} aria-hidden />
           </div>
           <div className={detail.metaBar}>
-            <span>{project.year}</span>
+            {project.year.map((y) => (
+              <span key={y}>{y}</span>
+            ))}
             {project.types.map((t) => (
               <span key={t}>· {t}</span>
             ))}

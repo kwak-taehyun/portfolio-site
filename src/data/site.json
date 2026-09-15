@@ -35,11 +35,11 @@
       "primary": { "href": "/projects", "label": "프로젝트 보기" },
       "secondary": { "href": "/contact", "label": "연락하기" }
     },
-    "highlightsIntro": "대표 프로젝트",
+    "highlightsIntro": "최근 프로젝트",
     "featuredProjectSlugs": [
-      "design-system-a11y",
-      "commerce-performance",
-      "campaign-microsite"
+      "meritz-tm-si",
+      "kbpay-3.0-si",
+      "skrental-b2c-sm"
     ],
     "strengths": [
       {
@@ -69,13 +69,13 @@
       },
       {
         "title": "접근성",
-        "desc": "WCAG 기준 점검, ARIA·포커스 관리, 팀 내 교육"
+        "desc": "WCAG 기준 점검, ARIA·포커스 관리"
       },
       {
         "title": "성능",
-        "desc": "LCP/CLS/TBT 개선, lazy loading, critical CSS"
+        "desc": "이미지/폰트 최적화, 동적 콘텐츠 제어, 코드/롱 태스크 분할"
       },
-      { "title": "협업", "desc": "Figma·Git·이슈 트래킹 기반 커뮤니케이션" }
+      { "title": "협업", "desc": "Figma · Git · Slack · Jira 이슈 트래킹 기반 커뮤니케이션" }
     ],
     "philosophy": {
       "title": "작업 철학",
@@ -116,9 +116,9 @@
         "id": "frameworks",
         "title": "프레임워크",
         "items": [
-          { "name": "React", "detail": "Hooks, 컴포넌트 설계, 상태 관리" },
-          { "name": "Next.js", "detail": "App Router, SSR/SSG, 메타데이터" },
-          { "name": "Vue", "detail": "옵션 API·컴포지션 API, Nuxt 경험" }
+          { "name": "React", "detail": "Hooks, 컴포넌트 작업, 상태 관리" },
+          { "name": "Next.js", "detail": "App Router, SSR/SSG" },
+          { "name": "Vue", "detail": "옵션 API·컴포지션 API" }
         ]
       },
       {

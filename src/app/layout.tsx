@@ -42,7 +42,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={darkTheme} suppressHydrationWarning>
+    <html
+      lang="ko"
+      className={darkTheme}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <head>
         <link
           rel="stylesheet"

@@ -84,7 +84,7 @@ export type ProjectDetail = {
 export type Project = {
   slug: string;
   title: string;
-  year: number;
+  year: number[];
   types: string[];
   summary: string;
   stack: string[];

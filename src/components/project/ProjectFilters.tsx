@@ -26,7 +26,8 @@ export function ProjectFilters({ projects }: Props) {
   }, [projects]);
 
   const yearOptions = useMemo(() => {
-    const set = new Set(projects.map((p) => String(p.year)));
+    const set = new Set<string>();
+    projects.forEach((p) => p.year.forEach((y) => set.add(String(y))));
     return Array.from(set).sort((a, b) => Number(b) - Number(a));
   }, [projects]);
 
@@ -36,7 +37,8 @@ export function ProjectFilters({ projects }: Props) {
         type === "all" || p.types.includes(type);
       const stackOk =
         stack === "all" || p.stack.includes(stack);
-      const yearOk = year === "all" || String(p.year) === year;
+      const yearOk =
+        year === "all" || p.year.some((y) => String(y) === year);
       return typeOk && stackOk && yearOk;
     });
   }, [projects, type, stack, year]);

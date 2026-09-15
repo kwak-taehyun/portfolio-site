@@ -1,12 +1,50 @@
 {
   "projects": [
+	{
+      "slug": "meritz-tm-si",
+      "title": "메리츠화재 TM 교육플랫폼 구축",
+      "year": [2026],
+      "types": ["퍼블리싱", "접근성", "반응형"],
+      "summary": "교육플랫폼 솔루션을 기반으로 고객의 요구에 따라 UX/UI를 개선하여 사이트 전반의 활용도 및 사용자의 사용성을 개선한 프로젝트입니다.",
+      "stack": ["React", "TypeScript", "Tailwind", "NextJS"],
+      "thumbnailTone": "amber",
+      "detail": {
+        "overview": "교육플랫폼으로의 기능을 개선하고 다양한 교육 컨텐츠의 형태에 맞춰 UI와 가이드를 정리하고, 신규 사용성과 품질을 동시에 끌어올리는 것이 목표였습니다.",
+        "role": "UI 화면 작업 · UI 모션 · 접근성 개선",
+        "problem": "교육플랫폼 솔루션을 고객의 요구사항에 따라 UI/UX를 변경하게 되면서 여러번의 수정과 개선을 진행하는 사례가 반복되었습니다.",
+        "approach": "디자인 토큰과 시맨틱 구조를 먼저 합의하고, Storybook에 상태·a11y 노트를 포함한 문서를 병행했습니다.",
+        "solution": "기존 공통컴포넌트와 Recharts 사용성 개선, 숏폼 기능을 추가하여 다양한 교육플랫폼 컨텐츠에 대응하였습니다.",
+        "results": [
+          "기존 솔루션 대비 디자인 개선 및 신규기능 추가 UI/UX 개선",
+          "공통 컴포넌트 개선을 통한 코드 활용 개선",
+          "반응형을 통한 모바일 대응"
+        ],
+        "metrics": [
+          {
+            "label": "접근성 자동 검사 위반",
+            "value": "-62%",
+            "context": "주요 플로우 기준"
+          },
+          {
+            "label": "컴포넌트 재사용률",
+            "value": "+48%",
+            "context": "신규 페이지 대비"
+          }
+        ],
+        "galleryCaptions": [
+          "문서화된 컴포넌트 카탈로그",
+          "포커스 순서 시연",
+          "다크 모드 토큰 적용"
+        ]
+      }
+    },
     {
       "slug": "kbpay-3.0-si",
       "title": "KB국민카드 KB Pay 3.0 구축",
-      "year": 2025,
+      "year": [2025],
       "types": ["퍼블리싱", "접근성"],
       "summary": "컴포넌트 라이브러리와 문서화를 통해 팀 전반의 UI 일관성과 접근성 기준을 통일한 프로젝트입니다.",
-      "stack": ["React", "Storybook", "TypeScript", "CSS Modules"],
+      "stack": ["JAVASCRIPT", "HTML", "CSS"],
       "thumbnailTone": "blue",
       "detail": {
         "overview": "여러 제품군이 공유하는 UI 키트와 가이드를 정리하고, 신규 화면 개발 속도와 품질을 동시에 끌어올리는 것이 목표였습니다.",
@@ -41,10 +79,10 @@
     {
       "slug": "skrental-b2c-sm",
       "title": "SK렌터카 B2C 통합운영",
-      "year": 2025,
+      "year": [2025],
       "types": ["퍼블리싱", "크로스 브라우징"],
       "summary": "레거시 템플릿을 모던 스택으로 이전하며 LCP와 번들 크기를 동시에 개선했습니다.",
-      "stack": ["Next.js", "React", "Vanilla Extract", "Image CDN"],
+      "stack": ["React", "Vue", "Styled-component", "HTML"],
       "thumbnailTone": "violet",
       "detail": {
         "overview": "모바일 유입이 대부분인 서비스에서 체감 속도와 이탈률 개선이 핵심 과제였습니다.",
@@ -75,10 +113,10 @@
     {
       "slug": "skrental-ui-ux-renewal",
       "title": "SK렌터카 UI,UX 리뉴얼",
-      "year": 2023,
+      "year": [2023, 2024],
       "types": ["퍼블리싱", "UI/UX", "기능개선"],
       "summary": "레거시 템플릿을 모던 스택으로 이전하며 LCP와 번들 크기를 동시에 개선했습니다.",
-      "stack": ["Next.js", "React", "Vanilla Extract", "Image CDN"],
+      "stack": ["JAVASCRIPT", "HTML", "CSS"],
       "thumbnailTone": "teal",
       "detail": {
         "overview": "모바일 유입이 대부분인 서비스에서 체감 속도와 이탈률 개선이 핵심 과제였습니다.",
@@ -109,10 +147,10 @@
     {
       "slug": "shilladfs-sm",
       "title": "신라면세점 지점 & 리워즈 사이트 운영",
-      "year": 2021,
+      "year": [2021, 2022],
       "types": ["퍼블리싱", "크로스 브라우징"],
       "summary": "다국어·다해상도 대응이 필요한 프로모션 및 리워즈 사이트를 안정적으로 운영했습니다.",
-      "stack": ["HTML", "CSS", "JAVASCRIPT"],
+      "stack": ["JAVASCRIPT", "HTML", "CSS"],
       "thumbnailTone": "amber",
       "detail": {
         "overview": "브랜드 가이드에 맞는 인터랙션과 짧은 로딩 시간이 요구되었습니다.",
@@ -138,10 +176,10 @@
     {
       "slug": "nh-tablet-branch-enhancement",
       "title": "NH농협 태블릿브랜치 고도화",
-      "year": 2020,
+      "year": [2019, 2020],
       "types": ["퍼블리싱", "크로스 브라우징"],
       "summary": "짧은 기간 내 다국어·다해상도 대응이 필요한 프로모션 사이트를 안정적으로 런칭했습니다.",
-      "stack": ["HTML", "SCSS", "Webpack", "GSAP"],
+      "stack": ["JAVASCRIPT", "HTML", "CSS"],
       "thumbnailTone": "blue",
       "detail": {
         "overview": "브랜드 가이드에 맞는 인터랙션과 짧은 로딩 시간이 요구되었습니다.",
