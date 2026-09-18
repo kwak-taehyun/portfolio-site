@@ -78,7 +78,7 @@ export type ProjectDetail = {
   solution: string;
   results: string[];
   metrics: ProjectMetric[];
-  galleryCaptions: string[];
+  galleryCaptions?: string[];
 };
 
 export type Project = {

@@ -91,21 +91,21 @@ export default async function ProjectDetailPage({ params }: Props) {
         title="역할 및 기여도"
         body={d.role}
       />
-      <StoryBlock
+      {/*<StoryBlock
         label="Problem"
         title="문제 상황"
         body={d.problem}
-      />
+      />*/}
       <StoryBlock
-        label="Approach"
-        title="접근 방법"
+        label="requirements"
+        title="핵심 요건"
         body={d.approach}
       />
-      <StoryBlock
+      {/*<StoryBlock
         label="Solution"
         title="해결 과정"
         body={d.solution}
-      />
+      />*/}
 
       <section className={detail.storySection} aria-labelledby="results-h">
         <Reveal>
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         </Reveal>
       </section>
 
-      <section className={detail.storySection} aria-labelledby="gallery-h">
+      {d.galleryCaptions && d.galleryCaptions.length > 0 && (<section className={detail.storySection} aria-labelledby="gallery-h">
         <Reveal>
           <p className={detail.storyLabel}>Screens</p>
           <h2 id="gallery-h" className={detail.storyTitle}>
@@ -151,7 +151,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             ))}
           </div>
         </Reveal>
-      </section>
+      </section>)}
     </article>
   );
 }

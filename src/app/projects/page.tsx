@@ -21,8 +21,7 @@ export default function ProjectsPage() {
           <p className={layout.sectionLabel}>Projects</p>
           <h1 className={layout.sectionTitle}>프로젝트</h1>
           <p className={layout.sectionDesc}>
-            {site.meta.author}의 대표 작업물입니다. 카드를 열면 문제 → 접근 →
-            해결 → 결과의 흐름으로 정리된 상세 스토리를 볼 수 있습니다.
+            {site.meta.author}의 대표 참여 프로젝트 있습니다.
           </p>
         </Reveal>
       </header>
