@@ -74,7 +74,7 @@ export type ProjectDetail = {
   overview: string;
   role: string;
   problem: string;
-  approach: string;
+  requirements: string;
   solution: string;
   results: string[];
   metrics: ProjectMetric[];

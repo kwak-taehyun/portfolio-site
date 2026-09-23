@@ -99,7 +99,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       <StoryBlock
         label="requirements"
         title="핵심 요건"
-        body={d.approach}
+        body={d.requirements}
       />
       {/*<StoryBlock
         label="Solution"
