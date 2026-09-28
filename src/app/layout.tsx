@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
-import { getSite } from "@/lib/data";
+import { getSite, getSiteUrl } from "@/lib/data";
 import { darkTheme } from "@/styles/theme.css";
 import * as layoutStyles from "@/styles/layout.css";
 import "@/styles/global.css";
@@ -12,9 +12,7 @@ import "./globals.css";
 const site = getSite();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: site.meta.title,
     template: `%s · ${site.meta.title}`,

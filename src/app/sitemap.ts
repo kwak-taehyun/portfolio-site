@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-import { getAllProjectSlugs } from "@/lib/data";
+import { getAllProjectSlugs, getSiteUrl } from "@/lib/data";
 
-const base = () =>
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+export const dynamic = "force-static";
+
+const base = () => getSiteUrl();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const root = base();
