@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://kwak-taehyun.github.io/portfolio-site/sitemap.xml
