@@ -120,7 +120,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               </li>
             ))}
           </ul>
-          <div className={detail.metricsGrid}>
+          {/* <div className={detail.metricsGrid}>
             {d.metrics.map((m) => (
               <div key={m.label} className={detail.metricCard}>
                 <p className={detail.metricValue}>{m.value}</p>
@@ -128,11 +128,11 @@ export default async function ProjectDetailPage({ params }: Props) {
                 <p className={detail.metricCtx}>{m.context}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </Reveal>
       </section>
 
-      {d.galleryCaptions && d.galleryCaptions.length > 0 && (<section className={detail.storySection} aria-labelledby="gallery-h">
+      {d.galleryCaptions && d.galleryCaptions.length > 0 ? (<section className={detail.storySection} aria-labelledby="gallery-h">
         <Reveal>
           <p className={detail.storyLabel}>Screens</p>
           <h2 id="gallery-h" className={detail.storyTitle}>
@@ -151,7 +151,18 @@ export default async function ProjectDetailPage({ params }: Props) {
             ))}
           </div>
         </Reveal>
-      </section>)}
+      </section>) : (
+        <section className={detail.storySection} aria-labelledby="gallery-h">
+          <Reveal>
+          <p className={detail.storyLabel}>Screens</p>
+          <h2 id="gallery-h" className={detail.storyTitle}>
+            화면 / 인터랙션
+          </h2>
+          <p className={detail.storyBody}>
+            보안 정책에 따라 실제 프로젝트 화면과 확인 가능한 URL은 공개하지 않습니다. 담당 업무와 구현 경험을 중심으로 정리했습니다.
+          </p>
+        </Reveal>
+        </section>)}
     </article>
   );
 }

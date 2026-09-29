@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getProjects, getSite } from "@/lib/data";
+import { getProjects} from "@/lib/data";
 import { ProjectFilters } from "@/components/project/ProjectFilters";
 import { Reveal } from "@/components/motion/Reveal";
 import * as layout from "@/styles/layout.css";
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   const projects = getProjects();
-  const site = getSite();
 
   return (
     <div className={layout.container}>
@@ -21,7 +20,7 @@ export default function ProjectsPage() {
           <p className={layout.sectionLabel}>Projects</p>
           <h1 className={layout.sectionTitle}>프로젝트</h1>
           <p className={layout.sectionDesc}>
-            {site.meta.author}의 대표 참여 프로젝트 있습니다.
+            주요 프로젝트에서 담당한 업무와 경험을 정리했습니다.
           </p>
         </Reveal>
       </header>

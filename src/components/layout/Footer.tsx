@@ -12,7 +12,7 @@ export function Footer() {
         <div className={styles.meta}>
           <p className={styles.title}>{site.meta.title}</p>
           <p className={styles.copy}>
-            © {year} {site.meta.author}. Sementic Mark up &amp; Web Accessibility based UI Development.
+            © {year} {site.meta.author}. Semantic Markup &amp; Web Accessibility based UI Development.
           </p>
         </div>
         <nav className={styles.links} aria-label="푸터 링크">
