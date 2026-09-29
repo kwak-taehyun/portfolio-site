@@ -19,17 +19,17 @@
     { "href": "/contact", "label": "연락처" }
   ],
   "home": {
-    "headline": "구조를 세우고, 모두가 쓸 수 있는 웹을 만듭니다.",
-    "keywords": ["Semantic HTML", "a11y", "Performance", "Cross-browser"],
-    "intro": "10년 이상 퍼블리싱과 프론트엔드 경험을 바탕으로 디자인을 정확히 구현하고, 접근성과 성능까지 책임지는 마크업·UI 개발을 지향합니다.",
+    "headline": "탄탄한 UI 구현 경험을 바탕으로",
+    "description": "프런트엔드 개발까지 영역을 넓혀가고 있습니다.",
+    "keywords": ["CSS Architecture", "Cross Browser", "UI Implementation", "Interaction"],
+    "intro": "10년 이상 다양한 웹 서비스의 UI를 구현하고 운영해왔습니다. 시맨틱 마크업과 웹 접근성, 유지보수를 고려한 UI 구현을 강점으로 가지고 있으며, 최근에는 React와 TypeScript를 중심으로 컴포넌트 기반의 프런트엔드 개발 역량을 쌓고 있습니다.",
     "techStackSummary": [
-      "HTML5 / CSS3",
-      "JavaScript (ES6+)",
+      "HTML / CSS3",
+      "Semantic Markup", "Web Accessibility", "Responsive UI",
+      "JavaScript",
       "React",
-      "Next.js",
       "Vue",
-      "웹 접근성(WCAG)",
-      "Core Web Vitals"
+      "Typescript"
     ],
     "cta": {
       "primary": { "href": "/projects", "label": "프로젝트 보기" },
@@ -44,7 +44,7 @@
     "strengths": [
       {
         "title": "시맨틱 마크업",
-        "body": "의미 있는 구조로 유지보수와 SEO, 보조기기 호환을 동시에 잡습니다."
+        "body": "의미 있는 구조로 유지보수와 SEO, 웹 접근성과의 균형을 맞춥니다."
       },
       {
         "title": "웹 접근성",
@@ -59,23 +59,23 @@
   "about": {
     "title": "소개",
     "career": {
-      "yearsLabel": "10+ years",
-      "summary": "에이전시·SI·스타트업 등 다양한 환경에서 마크업, UI 개발, 디자인 시스템 구축에 참여해 왔습니다. 기획·디자인·백엔드와의 협업 경험이 풍부하며, 납기와 품질의 균형을 맞추는 데 익숙합니다."
+      "yearsLabel": "UI를 이해하는 것에서 시작해, 프런트엔드 개발까지",
+      "summary": "10년 이상 웹 퍼블리셔로 일하며 금융, 모빌리티, 커머스, 교육 등 다양한 서비스의 UI를 구현하고 운영해왔습니다. 디자인을 화면에 그대로 옮기는 것보다 실제 사용 환경에서 불편함이 없는지, 구조가 복잡해지더라도 유지보수하기 쉬운지, 키보드나 스크린리더를 사용하는 사용자도 서비스를 이용할 수 있는지를 중요하게 생각합니다. 프로젝트를 경험하면서 UI 역시 단순한 화면 구현을 넘어 데이터와 상태에 따라 움직이는 하나의 기능이라는 점에 관심을 갖게 되었고, React와 Vue 기반 프로젝트에 참여하며 프런트엔드 개발 영역으로 업무 범위를 넓혀왔습니다. 현재는 React와 TypeScript를 중심으로 컴포넌트 설계와 상태 관리, 데이터 흐름을 학습하고 실제 프로젝트에 적용하면서 부족한 부분을 채워가고 있습니다. 오랜 퍼블리싱 경험에서 쌓은 UI 구현 능력과 웹 표준·접근성에 대한 이해를 기반으로, 사용하기 편하고 유지보수하기 좋은 프런트엔드를 만드는 개발자로 성장하는 것이 목표입니다."
     },
     "expertise": [
       {
-        "title": "퍼블리싱",
-        "desc": "픽셀 퍼펙트에 가까운 구현, 반응형·크로스 브라우징 대응"
+        "title": "Semantic HTML",
+        "desc": "화면의 모양만 맞추는 마크업보다 콘텐츠의 의미와 문서 구조를 고려한 마크업을 중요하게 생각합니다. 서비스 규모가 커져도 구조를 이해하기 쉽고 유지보수하기 좋은 HTML을 작성하는 것을 기본 원칙으로 삼고 있습니다."
       },
       {
-        "title": "접근성",
-        "desc": "WCAG 기준 점검, ARIA·포커스 관리"
+        "title": "CSS & Responsive UI",
+        "desc": "다양한 해상도와 디바이스 환경을 고려한 반응형 UI를 구현해왔습니다. 디자인을 그대로 재현하는 데 그치지 않고 공통 스타일과 반복되는 UI 패턴을 정리해 수정과 확장이 쉬운 구조를 만드는 데 익숙합니다."
       },
       {
-        "title": "성능",
-        "desc": "이미지/폰트 최적화, 동적 콘텐츠 제어, 코드/롱 태스크 분할"
+        "title": "Web Accessibility",
+        "desc": "금융·커머스 등 다양한 프로젝트에서 웹 접근성을 고려한 UI를 구현했습니다. 시맨틱 요소와 키보드 접근, 포커스 이동, 대체 텍스트와 ARIA 속성 등을 실제 서비스 환경에서 고려하며 작업해왔습니다."
       },
-      { "title": "협업", "desc": "Figma · Git · Slack · Jira 이슈 트래킹 기반 커뮤니케이션" }
+      { "title": "UI Development", "desc": "기획과 디자인 의도를 이해하고 이를 실제 서비스에서 안정적으로 동작하는 UI로 구현하는 것이 가장 큰 강점입니다. 디자이너와 개발자 사이에서 구현 가능성을 검토하고, 개발 과정에서 발생할 수 있는 UI 이슈를 미리 발견해 조율하는 역할도 꾸준히 수행해왔습니다." }
     ],
     "philosophy": {
       "title": "작업 철학",
@@ -87,7 +87,7 @@
     },
     "collaboration": {
       "title": "협업 경험",
-      "body": "디자이너와 컴포넌트 스펙을 정리하고, 백엔드와 API·템플릿 경계를 합의하며, QA·기획과 재현 가능한 이슈 리포트를 주고받는 방식으로 일해 왔습니다."
+      "body": "디자이너와 컴포넌트 스펙을 정리하고, 백엔드와 API·템플릿 경계를 합의하며, QA·기획과 재현 가능한 이슈 리포트를 주고받는 방식으로 일해 왔으며, Figma · Git · Slack · Jira · Confluence · Zeplin 등 다양한 도구를 활용해왔습니다."
     }
   },
   "skills": {
@@ -116,9 +116,10 @@
         "id": "frameworks",
         "title": "프레임워크",
         "items": [
-          { "name": "React", "detail": "Hooks, 컴포넌트 작업, 상태 관리" },
-          { "name": "Next.js", "detail": "App Router, SSR/SSG" },
-          { "name": "Vue", "detail": "옵션 API·컴포지션 API" }
+          { "name": "React", "detail": "실무 프로젝트에서 UI 컴포넌트 구현 및 개선 경험" },
+          { "name": "TypeScript", "detail": "React 프로젝트를 중심으로 실무 프로젝트에서 작업 경험" },
+          { "name": "Next.js", "detail": "Next.js 프로젝트 환경에서 UI 구현 및 컴포넌트 작업 경험" },
+          { "name": "Vue", "detail": "기존 Vue 프로젝트의 구조를 이해하고 UI 수정 및 기능 개선 작업에 참여" }
         ]
       },
       {
@@ -126,8 +127,8 @@
         "title": "퍼포먼스 최적화",
         "items": [
           {
-            "name": "Core Web Vitals",
-            "detail": "LCP, INP, CLS 모니터링·개선"
+            "name": "Performance Optimization",
+            "detail": "웹 성능을 고려한 이미지, CSS 및 렌더링 최적화 경험"
           },
           {
             "name": "에셋 전략",
@@ -147,9 +148,9 @@
         "id": "tools",
         "title": "협업 도구",
         "items": [
-          { "name": "Figma", "detail": "디자인 스펙·오토레이아웃 대응" },
-          { "name": "Git / GitHub", "detail": "브랜치 전략, 코드 리뷰" },
-          { "name": "Jira / Notion", "detail": "이슈·문서 협업" }
+          { "name": "Figma / Zeplin", "detail": "디자인 스펙·오토레이아웃 대응" },
+          { "name": "Git / GitHub / SVN", "detail": "브랜치 전략, 코드 리뷰" },
+          { "name": "Jira / Confluence", "detail": "이슈·문서 협업" }
         ]
       }
     ]

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { style, globalStyle } from "@vanilla-extract/css";
 import { vars } from "@/styles/theme.css";
 
 export const hero = style({
@@ -44,20 +44,25 @@ export const kicker = style({
 });
 
 export const headline = style({
-  fontSize: "clamp(2rem, 5vw, 2.5rem)",
+  fontSize: "clamp(1.5rem, 5vw, 2rem)",
   fontWeight: 700,
   letterSpacing: "-0.03em",
-  lineHeight: 1.15,
+  lineHeight: 1.5,
   color: vars.color.text,
   marginBottom: "1.25rem",
 });
 
+globalStyle(`${headline} span`, {
+  display: "block",
+})
+
 export const intro = style({
   fontSize: "1.125rem",
   color: vars.color.textMuted,
-  lineHeight: 1.75,
-  maxWidth: "38rem",
+  lineHeight: 1.67,
+  maxWidth: "40rem",
   marginBottom: "1.75rem",
+  wordBreak: "keep-all",
 });
 
 export const keywordRow = style({

@@ -14,7 +14,7 @@ export const block = style({
 
 export const years = style({
   fontFamily: vars.font.sans,
-  fontSize: "clamp(2.5rem, 6vw, 3.5rem)",
+  fontSize: "clamp(1.5rem, 6vw, 2rem)",
   fontWeight: 600,
   letterSpacing: "-0.03em",
   color: vars.color.accent,
@@ -25,7 +25,6 @@ export const lead = style({
   fontSize: "1rem",
   color: vars.color.textMuted,
   lineHeight: 1.75,
-  maxWidth: "44rem",
   wordBreak: "keep-all",
 });
 

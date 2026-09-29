@@ -16,9 +16,9 @@ export default function HomePage() {
         <div className={layout.container}>
           <div className={home.heroGrid}>
             <Reveal className={home.heroMain}>
-              <p className={home.kicker}>Frontend · Publishing · a11y</p>
+              <p className={home.kicker}>Senior Web Publisher · Frontend Developer</p>
               <h1 id="home-headline" className={home.headline}>
-                {site.home.headline}
+                <span>{site.home.headline}</span>{site.home.description}
               </h1>
               <p className={home.intro}>{site.home.intro}</p>
               <div className={home.keywordRow} aria-label="키워드">

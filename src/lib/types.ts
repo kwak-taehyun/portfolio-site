@@ -9,6 +9,7 @@ export type SiteMeta = {
 
 export type HomeData = {
   headline: string;
+  description: string;
   keywords: string[];
   intro: string;
   techStackSummary: string[];
