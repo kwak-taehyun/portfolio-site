@@ -37,11 +37,10 @@ export default function SkillsPage() {
               <ul className={skillsStyles.itemList}>
                 {group.items.map((item) => (
                   <li
-                    key={`${group.id}-${item.name}`}
+                    key={`${group.id}-${item}`}
                     className={skillsStyles.item}
                   >
-                    <span className={skillsStyles.itemName}>{item.name}</span>
-                    <span className={skillsStyles.itemDetail}>{item.detail}</span>
+                    {item}
                   </li>
                 ))}
               </ul>

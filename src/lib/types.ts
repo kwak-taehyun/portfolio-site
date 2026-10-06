@@ -28,12 +28,13 @@ export type AboutData = {
   expertise: { title: string; desc: string }[];
   philosophy: { title: string; items: string[] };
   collaboration: { title: string; body: string };
+  assist: {title: string; body: string; items: string[]}
 };
 
 export type SkillGroup = {
   id: string;
   title: string;
-  items: { name: string; detail: string }[];
+  items: string[];
 };
 
 export type SkillsPageData = {

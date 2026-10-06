@@ -27,23 +27,31 @@ export const groupTitle = style({
 
 export const itemList = style({
   display: "grid",
-  gridTemplateColumns: "repeat(12, 1fr)",
-  gap: "1rem 1.25rem",
-  listStyle: "none",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gap: 10,
+  "@media": {
+    "(max-width: 768px)": {
+      gridTemplateColumns: "repeat(1, 1fr)",
+    },
+  },
 });
 
 export const item = style({
-  gridColumn: "span 6",
-  borderRadius: 10,
-  border: `1px solid ${vars.color.border}`,
-  backgroundColor: vars.color.bgElevated,
-  padding: "1rem 1.15rem",
-  display: "flex",
-  flexDirection: "column",
-  gap: 6,
-  "@media": {
-    "(max-width: 768px)": {
-      gridColumn: "1 / -1",
+  fontSize: "1rem",
+  color: vars.color.textMuted,
+  lineHeight: 1.75,
+  paddingLeft: "1.25rem",
+  position: "relative",
+  selectors: {
+    "&::before": {
+      content: "''",
+      position: "absolute",
+      left: 0,
+      top: "0.6em",
+      width: 5,
+      height: 5,
+      borderRadius: "50%",
+      backgroundColor: vars.color.accent,
     },
   },
 });

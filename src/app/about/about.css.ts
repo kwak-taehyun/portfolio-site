@@ -80,6 +80,13 @@ export const philosophyList = style({
   maxWidth: "44rem",
 });
 
+export const assistList = style([
+  philosophyList,
+  {
+    marginTop: "1.25rem",
+  },
+]);
+
 export const philosophyItem = style({
   fontSize: "1rem",
   color: vars.color.textMuted,

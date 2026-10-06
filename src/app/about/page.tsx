@@ -31,10 +31,25 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
+	   <section className={aboutStyles.block} aria-labelledby="philosophy-heading">
+        <Reveal>
+          <h2 id="philosophy-heading" className={aboutStyles.subheading}>
+            {about.philosophy.title}
+          </h2>
+          <ul className={aboutStyles.philosophyList}>
+            {about.philosophy.items.map((line) => (
+              <li key={line} className={aboutStyles.philosophyItem}>
+                {line}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+      </section>
+
       <section className={aboutStyles.block} aria-labelledby="expertise-heading">
         <Reveal>
           <h2 id="expertise-heading" className={aboutStyles.subheading}>
-            전문 분야
+            전문분야
           </h2>
         </Reveal>
         <ul className={aboutStyles.expertiseGrid}>
@@ -51,21 +66,6 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className={aboutStyles.block} aria-labelledby="philosophy-heading">
-        <Reveal>
-          <h2 id="philosophy-heading" className={aboutStyles.subheading}>
-            {about.philosophy.title}
-          </h2>
-          <ul className={aboutStyles.philosophyList}>
-            {about.philosophy.items.map((line) => (
-              <li key={line} className={aboutStyles.philosophyItem}>
-                {line}
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-      </section>
-
       <section className={aboutStyles.block} aria-labelledby="collab-heading">
         <Reveal>
           <h2 id="collab-heading" className={aboutStyles.subheading}>
@@ -73,6 +73,22 @@ export default function AboutPage() {
           </h2>
           <p className={aboutStyles.lead}>{about.collaboration.body}</p>
         </Reveal>
+      </section>
+
+      <section className={aboutStyles.block} aria-labelledby="assist-heading">
+        <Reveal>
+          <h2 id="assist-heading" className={aboutStyles.subheading}>
+            AI 활용
+          </h2>
+          <p className={aboutStyles.lead}>{about.assist.body}</p>
+        </Reveal>
+        <ul className={aboutStyles.assistList}>
+          {about.assist.items.map((line) => (
+            <li key={line} className={aboutStyles.philosophyItem}>
+              {line}
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

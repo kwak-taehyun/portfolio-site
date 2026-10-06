@@ -20,7 +20,7 @@ export default function ProjectsPage() {
           <p className={layout.sectionLabel}>Projects</p>
           <h1 className={layout.sectionTitle}>프로젝트</h1>
           <p className={layout.sectionDesc}>
-            주요 프로젝트에서 담당한 업무와 경험을 정리했습니다.
+            참여한 주요 프로젝트를 소개합니다.
           </p>
         </Reveal>
       </header>
