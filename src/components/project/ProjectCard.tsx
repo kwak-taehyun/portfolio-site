@@ -38,7 +38,7 @@ export function ProjectCard({ project }: Props) {
               <Tag key={s}>{s}</Tag>
             ))}
           </div>
-          <span className={styles.readMore}>스토리 보기 →</span>
+          <span className={styles.readMore}>프로젝트 상세 보기 →</span>
         </div>
       </Link>
     </article>

@@ -20,6 +20,7 @@ export type HomeData = {
   highlightsIntro: string;
   featuredProjectSlugs: string[];
   strengths: { title: string; body: string }[];
+  currentlyFocusing: { title: string; desc: string }[];
 };
 
 export type AboutData = {
@@ -66,21 +67,19 @@ export type SiteJson = {
   contact: ContactData;
 };
 
-export type ProjectMetric = {
-  label: string;
-  value: string;
-  context: string;
+export type ProjectImplementation = {
+  title: string;
+  body: string;
 };
 
 export type ProjectDetail = {
   overview: string;
   role: string;
   problem: string;
-  requirements: string;
-  solution: string;
+  decision: string;
+  implementation: ProjectImplementation[];
   results: string[];
-  metrics: ProjectMetric[];
-  galleryCaptions?: string[];
+  learning: string;
 };
 
 export type Project = {

@@ -70,121 +70,70 @@ export default async function ProjectDetailPage({ params }: Props) {
             ))}
           </div>
           <h1 className={detail.title}>{project.title}</h1>
-          <p className={layout.sectionDesc}>{d.overview}</p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 8,
-              marginTop: "1rem",
-            }}
-          >
-            {project.stack.map((s) => (
-              <Tag key={s}>{s}</Tag>
-            ))}
-          </div>
         </Reveal>
       </header>
 
-      <StoryBlock
-        label="Role"
-        title="역할 및 기여도"
-        body={d.role}
-      />
-      {/*<StoryBlock
-        label="Problem"
-        title="문제 상황"
-        body={d.problem}
-      />*/}
-      <StoryBlock
-        label="requirements"
-        title="핵심 요건"
-        body={d.requirements}
-      />
-      {/*<StoryBlock
-        label="Solution"
-        title="해결 과정"
-        body={d.solution}
-      />*/}
-
-      <section className={detail.storySection} aria-labelledby="results-h">
-        <Reveal>
-          <p className={detail.storyLabel}>Outcome</p>
-          <h2 id="results-h" className={detail.storyTitle}>
-            결과 및 성과
-          </h2>
-          <ul className={detail.resultList}>
-            {d.results.map((r) => (
-              <li key={r} className={detail.resultItem}>
-                {r}
-              </li>
-            ))}
-          </ul>
-          {/* <div className={detail.metricsGrid}>
-            {d.metrics.map((m) => (
-              <div key={m.label} className={detail.metricCard}>
-                <p className={detail.metricValue}>{m.value}</p>
-                <p className={detail.metricLabel}>{m.label}</p>
-                <p className={detail.metricCtx}>{m.context}</p>
-              </div>
-            ))}
-          </div> */}
-        </Reveal>
-      </section>
-
-      {d.galleryCaptions && d.galleryCaptions.length > 0 ? (<section className={detail.storySection} aria-labelledby="gallery-h">
-        <Reveal>
-          <p className={detail.storyLabel}>Screens</p>
-          <h2 id="gallery-h" className={detail.storyTitle}>
-            화면 / 인터랙션
-          </h2>
-          <p className={detail.storyBody}>
-            실제 산출물 이미지가 있다면 이 영역에 교체할 수 있도록 그리드
-            자리를 마련했습니다.
-          </p>
-          <div className={detail.galleryGrid}>
-            {d.galleryCaptions.map((cap) => (
-              <div key={cap} className={detail.galleryItem}>
-                <span className={detail.galleryPattern} aria-hidden />
-                <p className={detail.galleryCaption}>{cap}</p>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-      </section>) : (
-        <section className={detail.storySection} aria-labelledby="gallery-h">
-          <Reveal>
-          <p className={detail.storyLabel}>Screens</p>
-          <h2 id="gallery-h" className={detail.storyTitle}>
-            화면 / 인터랙션
-          </h2>
-          <p className={detail.storyBody}>
-            보안 정책에 따라 실제 프로젝트 화면과 확인 가능한 URL은 공개하지 않습니다. 담당 업무와 구현 경험을 중심으로 정리했습니다.
-          </p>
-        </Reveal>
-        </section>)}
+      <DetailSection id="overview" title="프로젝트 개요">
+        <p className={detail.storyBody}>{d.overview}</p>
+      </DetailSection>
+      <DetailSection id="role" title="나의 역할">
+        <p className={detail.storyBody}>{d.role}</p>
+      </DetailSection>
+      <DetailSection id="problem" title="문제 / 요구사항">
+        <p className={detail.storyBody}>{d.problem}</p>
+      </DetailSection>
+      <DetailSection id="decision" title="내가 한 판단">
+        <p className={detail.storyBody}>{d.decision}</p>
+      </DetailSection>
+      <DetailSection id="implementation" title="구현">
+        <div className={detail.implList}>
+          {d.implementation.map((item) => (
+            <div key={item.title}>
+              <h3 className={detail.implTitle}>{item.title}</h3>
+              <p className={detail.storyBody}>{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </DetailSection>
+      <DetailSection id="results" title="결과">
+        <ul className={detail.resultList}>
+          {d.results.map((r) => (
+            <li key={r} className={detail.resultItem}>
+              {r}
+            </li>
+          ))}
+        </ul>
+      </DetailSection>
+      <DetailSection id="stack" title="사용 기술">
+        <div className={detail.stackRow}>
+          {project.stack.map((s) => (
+            <Tag key={s}>{s}</Tag>
+          ))}
+        </div>
+      </DetailSection>
+      <DetailSection id="learning" title="배운 점">
+        <p className={detail.storyBody}>{d.learning}</p>
+      </DetailSection>
     </article>
   );
 }
 
-function StoryBlock({
-  label,
+function DetailSection({
+  id,
   title,
-  body,
+  children,
 }: {
-  label: string;
+  id: string;
   title: string;
-  body: string;
+  children: React.ReactNode;
 }) {
-  const id = label.toLowerCase();
   return (
     <section className={detail.storySection} aria-labelledby={`${id}-h`}>
       <Reveal>
-        <p className={detail.storyLabel}>{label}</p>
         <h2 id={`${id}-h`} className={detail.storyTitle}>
           {title}
         </h2>
-        <p className={detail.storyBody}>{body}</p>
+        {children}
       </Reveal>
     </section>
   );

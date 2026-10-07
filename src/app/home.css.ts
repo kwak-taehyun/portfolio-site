@@ -111,6 +111,7 @@ export const highlightGrid = style({
   display: "grid",
   gridTemplateColumns: "repeat(12, 1fr)",
   gap: 24,
+  marginTop: "2.5rem"
 });
 
 export const strengthCard = style({
@@ -140,4 +141,5 @@ export const strengthBody = style({
   fontSize: "0.9375rem",
   color: vars.color.textMuted,
   lineHeight: 1.65,
+  wordBreak: "keep-all"
 });

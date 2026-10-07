@@ -87,6 +87,7 @@ export const summary = style({
   color: vars.color.textMuted,
   lineHeight: 1.65,
   flex: 1,
+  wordBreak: "keep-all"
 });
 
 export const stacks = style({

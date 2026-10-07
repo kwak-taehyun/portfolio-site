@@ -65,7 +65,7 @@ export default function HomePage() {
               {site.home.highlightsIntro}
             </h2>
             <p className={layout.sectionDesc} style={{ marginBottom: "2.5rem" }}>
-              문제 정의부터 결과까지 스토리로 정리한 대표 사례입니다.
+              각 프로젝트에서 맡은 업무와 구현 과정, 결과를 정리했습니다.
             </p>
           </Reveal>
           <div className={home.highlightGrid}>
@@ -87,12 +87,8 @@ export default function HomePage() {
           <Reveal>
             <p className={layout.sectionLabel}>Strengths</p>
             <h2 id="strengths-heading" className={layout.sectionTitle}>
-              퍼블리셔로서의 강점
+              퍼블리셔로서 잘하는 일
             </h2>
-            <p className={layout.sectionDesc} style={{ marginBottom: "2rem" }}>
-              시맨틱 마크업, 웹 접근성, 반응형·크로스 브라우징, 퍼포먼스를 기본
-              바탕으로 일합니다.
-            </p>
           </Reveal>
           <div className={home.highlightGrid}>
             {site.home.strengths.map((s, i) => (
@@ -103,6 +99,29 @@ export default function HomePage() {
               >
                 <h3 className={home.strengthTitle}>{s.title}</h3>
                 <p className={home.strengthBody}>{s.body}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={layout.section} aria-labelledby="currently-heading">
+        <div className={layout.container}>
+          <Reveal>
+            <p className={layout.sectionLabel}>Currently Focusing</p>
+            <h2 id="currently-heading" className={layout.sectionTitle}>
+              현재 집중 하고 있는 분야
+            </h2>
+          </Reveal>
+          <div className={home.highlightGrid}>
+            {site.home.currentlyFocusing.map((s, i) => (
+              <Reveal
+                key={s.title}
+                className={home.strengthCard}
+                delay={0.05 * i}
+              >
+                <h3 className={home.strengthTitle}>{s.title}</h3>
+                <p className={home.strengthBody}>{s.desc}</p>
               </Reveal>
             ))}
           </div>

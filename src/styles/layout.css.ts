@@ -44,7 +44,7 @@ export const grid12 = style({
 });
 
 export const section = style({
-  paddingBlock: "clamp(4rem, 10vw, 7rem)",
+  paddingBlock: "clamp(2rem, 10vw, 4rem)",
 });
 
 export const sectionLabel = style({
