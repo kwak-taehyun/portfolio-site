@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllProjectSlugs, getProjectBySlug, getSite } from "@/lib/data";
+import { withBasePath } from "@/lib/basePath";
+import { getPublicImageSize } from "@/lib/imageSize";
 import type { Project } from "@/lib/types";
 import { Reveal } from "@/components/motion/Reveal";
+import { ProjectThumbSwiper } from "@/components/project/ProjectThumbSwiper";
 import { Tag } from "@/components/ui/Tag";
 import * as cardStyles from "@/components/project/ProjectCard.css";
 import * as layout from "@/styles/layout.css";
@@ -47,6 +51,11 @@ export default async function ProjectDetailPage({ params }: Props) {
   const { detail: d } = project;
   const thumbClass =
     toneThumb[project.thumbnailTone] ?? cardStyles.thumbBlue;
+  const slides = (d.thumbnail ?? []).map((src) => ({
+    src: withBasePath(src),
+    ...getPublicImageSize(src),
+  }));
+  const singleSlide = slides.length === 1 ? slides[0] : null;
 
   return (
     <article className={layout.container}>
@@ -58,8 +67,27 @@ export default async function ProjectDetailPage({ params }: Props) {
 
       <header>
         <Reveal>
-          <div className={`${detail.heroThumb} ${thumbClass}`}>
-            <span className={cardStyles.thumbGrid} aria-hidden />
+          <div
+            className={
+              slides.length > 0
+                ? `${detail.heroThumb} ${thumbClass}`
+                : `${detail.heroThumb} ${detail.heroThumbFrame} ${thumbClass}`
+            }
+          >
+            {slides.length >= 2 ? (
+              <ProjectThumbSwiper slides={slides} />
+            ) : singleSlide ? (
+              <Image
+                src={singleSlide.src}
+                alt=""
+                width={singleSlide.width}
+                height={singleSlide.height}
+                sizes="(max-width: 1200px) 100vw, 1152px"
+                className={detail.heroImage}
+              />
+            ) : (
+              <span className={cardStyles.thumbGrid} aria-hidden />
+            )}
           </div>
           <div className={detail.metaBar}>
             {project.year.map((y) => (
@@ -81,9 +109,6 @@ export default async function ProjectDetailPage({ params }: Props) {
       </DetailSection>
       <DetailSection id="problem" title="문제 / 요구사항">
         <p className={detail.storyBody}>{d.problem}</p>
-      </DetailSection>
-      <DetailSection id="decision" title="내가 한 판단">
-        <p className={detail.storyBody}>{d.decision}</p>
       </DetailSection>
       <DetailSection id="implementation" title="구현">
         <div className={detail.implList}>
@@ -111,7 +136,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           ))}
         </div>
       </DetailSection>
-      <DetailSection id="learning" title="배운 점">
+      <DetailSection id="learning" title="경험">
         <p className={detail.storyBody}>{d.learning}</p>
       </DetailSection>
     </article>

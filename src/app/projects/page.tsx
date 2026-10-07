@@ -22,6 +22,9 @@ export default function ProjectsPage() {
           <p className={layout.sectionDesc}>
             참여한 주요 프로젝트를 소개합니다.
           </p>
+          <p className={layout.sectionCaution}>
+            (보안 정책에 따라 실제 프로젝트 화면과 소스코드는 공개하지 않습니다. 담당 업무와 구현 경험을 중심으로 정리했습니다.)
+          </p>
         </Reveal>
       </header>
       <ProjectFilters projects={projects} />

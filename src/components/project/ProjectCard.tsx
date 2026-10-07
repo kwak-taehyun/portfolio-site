@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 import type { Project } from "@/lib/types";
 import { Tag } from "@/components/ui/Tag";
 import * as styles from "./ProjectCard.css";
@@ -14,12 +16,23 @@ type Props = { project: Project };
 
 export function ProjectCard({ project }: Props) {
   const thumbTone = toneClass[project.thumbnailTone] ?? styles.thumbBlue;
+  const thumbSrc = project.detail.thumbnail?.[0];
 
   return (
     <article className={styles.cardWrapper}>
       <Link href={`/projects/${project.slug}`} className={styles.card}>
         <div className={`${styles.thumb} ${thumbTone}`}>
-          <span className={styles.thumbGrid} aria-hidden />
+          {thumbSrc ? (
+            <Image
+              src={withBasePath(thumbSrc)}
+              alt=""
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 33vw"
+              className={styles.thumbImage}
+            />
+          ) : (
+            <span className={styles.thumbGrid} aria-hidden />
+          )}
         </div>
         <div className={styles.body}>
           <div className={styles.meta}>

@@ -18,12 +18,21 @@ export const breadcrumbLink = style({
 });
 
 export const heroThumb = style({
-  aspectRatio: "21 / 9",
   borderRadius: 16,
   border: `1px solid ${vars.color.border}`,
   overflow: "hidden",
   marginBottom: "2rem",
   position: "relative",
+});
+
+export const heroThumbFrame = style({
+  aspectRatio: "21 / 9",
+});
+
+export const heroImage = style({
+  display: "block",
+  width: "100%",
+  height: "auto",
 });
 
 export const metaBar = style({

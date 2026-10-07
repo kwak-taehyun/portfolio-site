@@ -73,6 +73,12 @@ export const sectionDesc = style({
   lineHeight: 1.7,
 });
 
+export const sectionCaution = style({
+  fontSize: "0.875rem",
+  lineHeight: 1.5,
+  color: vars.color.textSubtle,
+});
+
 export const spanFull = style({
   gridColumn: "1 / -1",
 });

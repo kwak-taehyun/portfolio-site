@@ -56,6 +56,10 @@ export const thumbGrid = style({
   backgroundSize: "24px 24px",
 });
 
+export const thumbImage = style({
+  objectFit: "cover",
+});
+
 export const body = style({
   padding: "1.25rem 1.35rem 1.4rem",
   display: "flex",

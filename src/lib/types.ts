@@ -80,6 +80,7 @@ export type ProjectDetail = {
   implementation: ProjectImplementation[];
   results: string[];
   learning: string;
+  thumbnail?: string[];
 };
 
 export type Project = {
